@@ -1,0 +1,27 @@
+// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  darkMode: "class", // Keep this but we'll force dark mode
+  theme: {
+    extend: {
+      colors: {
+        primary: "#137fec",
+        "background-light": "#101922", // Set to dark background
+        "background-dark": "#101922",
+      },
+      fontFamily: {
+        display: ["Space Grotesk", "sans-serif"],
+      },
+      borderRadius: {
+        'DEFAULT': '0.25rem',
+        'lg': '0.5rem',
+        'xl': '0.75rem',
+        'full': '9999px'
+      },
+    },
+  },
+  plugins: [],
+}
