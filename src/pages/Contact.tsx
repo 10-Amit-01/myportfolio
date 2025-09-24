@@ -4,6 +4,7 @@ import React, { useState } from "react";
 const Contact: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [status ,setStatus] = useState<boolean>(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -28,6 +29,10 @@ const Contact: React.FC = () => {
     setLoading(false);
     if (res.success) {
       setError("");
+      setStatus(true);
+      setTimeout(() => {
+        setStatus(false);
+      }, 2000);
       form.reset();
     } else {
       setError("Something went wrong");
@@ -97,6 +102,9 @@ const Contact: React.FC = () => {
               {loading ? "Sending..." : "Send Message"}
             </button>
             {error && <p className="text-white mt-2">{error}</p>}
+            {
+              status && <div className="border p-4 border-green-500 mt-2 text-white">Send sucessfully</div>
+            }
           </div>
         </form>
       </div>
