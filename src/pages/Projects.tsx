@@ -27,8 +27,8 @@ const Projects: React.FC = () => {
       ],
       imageUrl:
         "https://www.poptin.com/blog/wp-content/uploads/2019/03/ecommerce.jpg ",
-      demoUrl: "#",
-      repoUrl: "#",
+      // demoUrl: "#",
+      // repoUrl: "#",
     },
     {
       id: 2,
@@ -38,8 +38,8 @@ const Projects: React.FC = () => {
       technologies: ["React", "Redux Toolkit Query", "Tailwind CSS", "Express"],
       imageUrl:
         "https://thumbs.dreamstime.com/b/administrator-dashboard-vector-illustration-admin-panel-line-icon-eps-194136055.jpg?w=768",
-      demoUrl: "#",
-      repoUrl: "#",
+      // demoUrl: "#",
+      repoUrl: "https://github.com/10-Amit-01/adminPanelECom.git",
     },
     {
       id: 3,
@@ -47,8 +47,8 @@ const Projects: React.FC = () => {
       description:
         "A news application built in Kotlin with real-time API integration, category-wise browsing, and a clean, user-friendly interface.",
       technologies: ["Kotlin", "Java", "Sqlite"],
-      demoUrl:'#',
-      repoUrl:'#',
+      // demoUrl:'#',
+      repoUrl:'https://github.com/10-Amit-01/NewsApp.git',
       imageUrl:
         "https://mir-s3-cdn-cf.behance.net/project_modules/fs/a2b40f72258961.5be18bb9515f7.jpg",
     },
@@ -60,8 +60,8 @@ const Projects: React.FC = () => {
       technologies: ["Kotlin", "Firebase", "Sqlite"],
       imageUrl:
         "https://uizard.io/static/70070448b6fc133a7194ec7f4c7490c8/0cfa7/f5cee822600e5cde92be8c51bb20744dbdd18015-1440x835.webp",
-      demoUrl: "#",
-      repoUrl: "https://github.com/10-Amit-01/adminPanelECom.git",
+      // demoUrl: "#",
+      repoUrl: "https://github.com/AashishDhawan12/Nexus.git",
     },
   ];
 
